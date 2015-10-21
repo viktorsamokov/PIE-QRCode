@@ -25,7 +25,7 @@ public class MainActivity extends ActionBarActivity {
 		
 		setContentView(R.layout.activity_main);
 		Intent intent = new Intent("com.google.zxing.client.android.SCAN");
-	       intent.putExtra("SCAN_MODE", "QR_CODE_MODE");//for Qr code, its "QR_CODE_MODE" instead of "PRODUCT_MODE"
+	       intent.putExtra("SCAN_MODE", "QR_CODE_MODE");
 	       intent.putExtra("SAVE_HISTORY", false);//this stops saving ur barcode in barcode scanner app's history
 	       startActivityForResult(intent, 0);
 	       WebView view = (WebView) findViewById(R.id.webView);
@@ -45,7 +45,6 @@ public class MainActivity extends ActionBarActivity {
                     finishActivity(0);
                     WebView view = (WebView) findViewById(R.id.webView);
                     view.loadUrl(contents);
-                    //view.loadData("<b>asdas</b>", "text/html", "UTF-8");
                     
             } else 
             if (resultCode == RESULT_CANCELED) {
@@ -88,8 +87,8 @@ public class MainActivity extends ActionBarActivity {
 	
 	public void Scan(View view){
 		   Intent intent = new Intent("com.google.zxing.client.android.SCAN");
-	       intent.putExtra("SCAN_MODE", "QR_CODE_MODE");//for Qr code, its "QR_CODE_MODE" instead of "PRODUCT_MODE"
-	       intent.putExtra("SAVE_HISTORY", false);//this stops saving ur barcode in barcode scanner app's history
+	       intent.putExtra("SCAN_MODE", "QR_CODE_MODE");
+	       intent.putExtra("SAVE_HISTORY", false);
 	       startActivityForResult(intent, 0);
 	}
 	
