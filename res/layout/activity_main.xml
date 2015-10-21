@@ -24,7 +24,7 @@
         android:layout_centerHorizontal="true"
         android:background="@drawable/custom"
         android:drawableRight="@drawable/rsz_scan_icon"
-        android:onClick="Scan"
+        android:onClick="onClikScan"
         android:shadowColor="#A8A8A8"
         android:shadowDx="0"
         android:shadowDy="0"
